@@ -2,6 +2,7 @@ const express=require('express');
 const app=express();
 const cheerio=require('cheerio');
 const rp=require('request-promise');
+const PORT = process.env.PORT || 3000
 
 var url='';
 var data={
@@ -46,4 +47,4 @@ app.get('/info',(req,res)=>{
 })
 })
 
-app.listen(3000)
+app.listen(PORT)
